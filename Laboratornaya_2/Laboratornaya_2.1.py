@@ -3,13 +3,13 @@ salary = 5000  # Ежемесячная зарплата
 spend = 6000  # Траты за первый месяц
 increase = 0.05  # Ежемесячный рост цен
 months = 0 #месяца
-i = 0 #разница
+difference = 0 #разница
 while True:
-    i = spend - salary
-    if i > money_capital:
+    difference = spend - salary
+    if difference > money_capital:
         break
     months += 1
-    money_capital -= i
+    money_capital -= difference
     spend *= 1 + increase
 # TODO Посчитайте количество  месяцев, которое можно протянуть без долгов
 
